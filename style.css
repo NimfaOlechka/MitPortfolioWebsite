@@ -1,0 +1,33 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+.cv-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.social-link {
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.social-link i {
+    width: 20px;
+    margin-right: 8px;
+}
+
+@media (min-width: 601px) {
+    .cv-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+}
