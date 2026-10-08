@@ -19,8 +19,5 @@ build/
 .next/
 out/
 
-# Personal project notes
-docs/Ide.docx
-
 # Logs
 *.log
