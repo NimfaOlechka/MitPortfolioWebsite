@@ -71,3 +71,8 @@ h6 {
     margin-bottom: 16px;
     box-sizing: border-box;
 }
+
+.profile-list {
+    padding-left: 20px;
+    margin-top: 8px;
+}
