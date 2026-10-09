@@ -60,3 +60,14 @@ h6 {
     font-size: 15px;
     font-weight: 500;
 }
+
+.project-image {
+    display: block;
+    width: 300px;
+    max-width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
