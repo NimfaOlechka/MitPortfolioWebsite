@@ -81,7 +81,8 @@ fetch("pages/footer.html")
   .then((response) => response.text())
   .then((html) => {
     document.getElementById("footer-section").innerHTML = html;
+    document.getElementById("linkedin-footer").href = linkedinUrl;
+document.getElementById("github-footer").href = githubUrl;
+
   });
 
-document.getElementById("linkedin-footer").href = linkedinUrl;
-document.getElementById("github-footer").href = githubUrl;

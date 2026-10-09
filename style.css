@@ -31,3 +31,32 @@ h6 {
         grid-template-columns: 1fr 2fr;
     }
 }
+
+.project-image-placeholder {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+    box-sizing: border-box;
+    background-color: #dcefeb;
+    border: 1px solid #b8d8d1;
+    border-radius: 4px;
+    margin-bottom: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    color: #009688;
+    text-align: center;
+}
+
+.project-image-placeholder i {
+    font-size: 42px;
+}
+
+.project-image-placeholder span {
+    font-size: 15px;
+    font-weight: 500;
+}
