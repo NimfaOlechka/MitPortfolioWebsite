@@ -1,3 +1,8 @@
+
+/* ========================================
+   1. GENERAL STYLES
+======================================== */
+
 html,
 body,
 h1,
@@ -9,11 +14,27 @@ h6 {
     font-family: "Roboto", sans-serif;
 }
 
+
+/* ========================================
+   2. CV PAGE LAYOUT
+======================================== */
+
 .cv-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
 }
+
+@media (min-width: 601px) {
+    .cv-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+
+/* ========================================
+   3. SOCIAL LINKS
+======================================== */
 
 .social-link {
     display: block;
@@ -26,21 +47,46 @@ h6 {
     margin-right: 8px;
 }
 
-@media (min-width: 601px) {
-    .cv-grid {
-        grid-template-columns: 1fr 2fr;
-    }
+
+/* ========================================
+   4. PROFILE LIST
+======================================== */
+
+.profile-list {
+    padding-left: 20px;
+    margin-top: 8px;
 }
 
+
+/* ========================================
+   5. PROJECT IMAGE LAYOUT
+   Places project placeholders side by side
+======================================== */
+
+.project-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+
+/* ========================================
+   6. PROJECT IMAGE PLACEHOLDERS
+======================================== */
+
 .project-image-placeholder {
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
+    max-width: 100%;
     height: 180px;
+    flex: 0 1 300px;
     box-sizing: border-box;
+
     background-color: #dcefeb;
     border: 1px solid #b8d8d1;
     border-radius: 4px;
-    margin-bottom: 16px;
 
     display: flex;
     flex-direction: column;
@@ -61,18 +107,19 @@ h6 {
     font-weight: 500;
 }
 
+
+/* ========================================
+   7. REAL PROJECT IMAGES
+   Used for screenshots such as PSD to HTML
+======================================== */
+
 .project-image {
     display: block;
     width: 300px;
-    max-width: 300px;
+    max-width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 16px;
     box-sizing: border-box;
-}
-
-.profile-list {
-    padding-left: 20px;
-    margin-top: 8px;
 }
